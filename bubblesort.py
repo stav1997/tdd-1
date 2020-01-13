@@ -6,9 +6,9 @@ class BUBBLESORT:
             return -1
         length = len(arr)
         if length == 0:
-            return "empty arry"
+            return "empty array"
         for i in range(length):
-            for j in range (0, length-i-1):
+            for j in range(0, length-i-1):
                 if arr[j] > arr[j+1]:
                     tmp = arr[j]
                     arr[j] = arr[j+1]
