@@ -14,17 +14,17 @@ def result(bmi_result):
         return -1
     elif bmi_result < 0:
         return -1
-    elif 0 >= bmi_result < 18.5:
+    elif 0 <= bmi_result < 18.5:
         return "under weight"
-    elif 18.5 >= bmi_result < 25:
+    elif 18.5 <= bmi_result < 25:
         return "normal weight"
-    elif 25 >= bmi_result < 29.9:
+    elif 25 <= bmi_result <= 29.9:
         return "over weight"
-    elif 30 >= bmi_result < 34.9:
+    elif 30 <= bmi_result <= 34.9:
         return "obesity first degree"
-    elif 35 >= bmi_result < 39.9:
+    elif 35 <= bmi_result <= 39.9:
         return "obesity second degree"
-    elif bmi_result <= 40:
+    elif bmi_result >= 40:
         return "obesity third degree"
     else:
         return -1
