@@ -34,6 +34,9 @@ class bubblesort_test(unittest.TestCase):
         expected_result8 = [2, 5, 5]
         expected_result9 = [5, 6]
         expected_result10 = [1, 5, 12, 23, 23, 52, 54, 90]
+        expected_result11 = 1
+        expected_result12 = 2
+        expected_result13 = 3
 
         actual_result1 = bubblesort.BUBBLESORT.bubble_sort(arry1)
         actual_result2 = bubblesort.BUBBLESORT.bubble_sort(arry2)
@@ -45,6 +48,10 @@ class bubblesort_test(unittest.TestCase):
         actual_result8 = bubblesort.BUBBLESORT.bubble_sort(arry8)
         actual_result9 = bubblesort.BUBBLESORT.bubble_sort(arry9)
         actual_result10 = bubblesort.BUBBLESORT.bubble_sort(arry10)
+        actual_result11 = len(bubblesort.BUBBLESORT.bubble_sort(arry6))
+        actual_result12 = len(bubblesort.BUBBLESORT.bubble_sort(arry7))
+        actual_result13 = len(bubblesort.BUBBLESORT.bubble_sort(arry8))
+
 
         self.assertEqual(expected_result1, actual_result1)
         self.assertEqual(expected_result2, actual_result2)
@@ -56,7 +63,9 @@ class bubblesort_test(unittest.TestCase):
         self.assertEqual(expected_result8, actual_result8)
         self.assertEqual(expected_result9, actual_result9)
         self.assertEqual(expected_result10, actual_result10)
-
+        self.assertEqual(expected_result11, actual_result11)
+        self.assertEqual(expected_result12, actual_result12)
+        self.assertEqual(expected_result13, actual_result13)
         if __name__ == '__main__':
             unittest.main()
 
